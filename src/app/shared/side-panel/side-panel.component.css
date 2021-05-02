@@ -1,0 +1,42 @@
+.sidepanel{
+    width: 312px;
+    height: auto;
+    --post-line-color: #ccc;    
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color:#e4e2e2;
+    color: black;
+    border-radius: 4px;
+    padding:5px;
+   
+    
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.sidepanel img{
+    width:312px;
+    padding-right:5px;
+    height: 300px;
+
+}
+.sidepanel .head {
+    text-align: center !important;
+   
+}
+
+button{
+    margin-top: 5px;
+    color: black;
+    background-color: transparent;
+    border:none;
+}
+
+
+
+.sidebar>ul>li{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #1c1c1c;
+}

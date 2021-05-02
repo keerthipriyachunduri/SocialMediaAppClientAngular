@@ -1,0 +1,31 @@
+<div class="sidepanel">
+   <img src="https://www.drupal.org/files/issues/default-avatar.png"/>
+    <div class="head">
+        
+          <h5>{{username}}</h5>
+    <hr>
+          <button (click)="goToUserProfile()" style="border: none;" >My Activity</button>
+<hr>
+        <button (click)="logout()" >Logout</button>
+</div>
+      
+        
+    
+    <table class="table" >
+        <tr>
+            <td>
+                <p><b>{{postLength}}</b></p>
+                <p>Posts</p>
+            </td>
+            <td>
+                <p><b>0</b></p>
+                <p>Followers</p>
+            </td>
+            <td>
+                <p><b>0</b></p>
+                <p>Following</p>
+            </td>
+        </tr>
+    </table>
+
+</div>

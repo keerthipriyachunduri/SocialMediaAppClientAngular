@@ -1,0 +1,35 @@
+<!-- Display Posts-->
+<div class="row post" *ngFor="let post of posts">
+
+  <!-- Section to Display Post Information-->
+  <div class="col-md-12">
+    <span class="subreddit-info">
+      <span> . Posted by <a class="username" routerLink="/user/{{post.userName}}">{{post.userName}}</a></span>
+      <span> . {{post.duration}}</span>
+    </span>
+    <hr />
+
+    <div>
+      <p class="post-text" [innerHtml]="post.postData"></p>
+    </div>
+    <hr />
+    <span>
+      <a class="btnCommments" role="button">Likes ({{post.likesCount}})
+        <fa-icon class="upvote" (click)="likePost(this.post)" [icon]="faThumbsUp">
+        </fa-icon>
+
+      </a>
+      <a class="btnCommments" role="button"> Dislikes ({{post.dislikesCount}})
+        <fa-icon class="downvote" (click)="dislikePost(this.post)" [icon]="faThumbsDown"></fa-icon>
+
+      </a>
+      <a class="btnCommments" role="button"> Comments({{post.commentsCount}})
+        <fa-icon [icon]="faComments"></fa-icon>
+
+      </a>
+      <button class="login" (click)="goToPost(post.id)">
+        Read Post
+      </button>
+    </span>
+  </div>
+</div>
